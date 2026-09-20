@@ -26,22 +26,9 @@ Automatizar o controle de irrigação e ventilação de uma estufa de pequeno po
 ## 🏗️ Arquitetura do Sistema
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                         ESP32 DevKit V1                         │
-│                                                                 │
-│  ┌──────────────┐    ┌──────────────┐    ┌──────────────────┐  │
-│  │ SensorManager│───▶│ StateMachine │───▶│ ActuatorManager  │  │
-│  │              │    │   (FSM)      │    │                  │  │
-│  │ • DHT22      │    │ 4 Estados    │    │ • Bomba (Relé 1) │  │
-│  │ • Solo Cap.  │    │ Prioridades  │    │ • Ventil.(Relé 2)│  │
-│  │ • LDR        │    │              │    │                  │  │
-│  └──────────────┘    └──────┬───────┘    └──────────────────┘  │
-│                             │                                   │
-│                      ┌──────▼───────┐                          │
-│                      │  DataLogger  │                          │
-│                      │ Serial/CSV   │                          │
-│                      └──────────────┘                          │
-└─────────────────────────────────────────────────────────────────┘
+![Diagrama de Conexões da Estufa](assets/circuito_esquematico.jpeg)
+
+![Fluxograma da Máquina de Estados](assets/fluxograma_maquina_estados.png)
 ```
 
 ---
