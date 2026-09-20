@@ -25,11 +25,9 @@ Automatizar o controle de irrigação e ventilação de uma estufa de pequeno po
 
 ## 🏗️ Arquitetura do Sistema
 
-```
 ![Diagrama de Conexões da Estufa](assets/circuito_esquematico.jpeg)
 
 ![Fluxograma da Máquina de Estados](assets/fluxograma_maquina_estados.png)
-```
 
 ---
 
